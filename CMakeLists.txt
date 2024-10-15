@@ -8,8 +8,11 @@ include_directories(
 
 
 add_library(Cerberus
+	src/Cerberus/Cerberus.h
 	src/Cerberus/Core.cpp
 	src/Cerberus/Core.h
+	src/Cerberus/Entity.h
+	src/Cerberus/Component.h
 )
 
 add_executable(demo
