@@ -26,9 +26,12 @@ namespace Cerberus
 
 	void Core::start()
 	{
-		for (size_t i = 0; i < 25; i++);
+		for (size_t i = 0; i < 5; i++);
 		{
+			for (size_t ei = 0; ei < m_entities.size(); ei++)
+			{
 
+			}
 		}
 
 	}

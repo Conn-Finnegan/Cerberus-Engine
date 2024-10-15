@@ -1,11 +1,24 @@
 #include <Cerberus/Cerberus.h>
 #include <iostream>
+#include <stdio.h>
+
 
 using namespace Cerberus;
 
-struct Test
+
+
+struct Player : Component
 {
-	int m_Temp;
+	void on_initialize()
+	{
+
+	}
+
+	void on_tick()
+	{
+
+	}
+
 };
 
 int main()
@@ -14,9 +27,8 @@ int main()
 
 	std::shared_ptr<Entity> ent = core->add_Entity();
 
-	ent->add_component<Test>();
+	std::shared_ptr<Player> p = ent->add_component<Player>();
 
-	core->add_Entity();
 	core->start();
 
 	return 0;

@@ -13,6 +13,8 @@ add_library(Cerberus
 	src/Cerberus/Core.h
 	src/Cerberus/Entity.h
 	src/Cerberus/Component.h
+	src/Cerberus/Entity.cpp
+	src/Cerberus/Component.cpp
 )
 
 add_executable(demo

@@ -23,6 +23,9 @@ namespace Cerberus
 		friend struct Cerberus::Core;
 		std::weak_ptr<Core> m_core;
 		std::vector<std::shared_ptr<Component> > m_components;
+
+		void tick();
+
 	};
 
 
