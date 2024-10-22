@@ -14,7 +14,7 @@ struct Player : Component
 
 	}
 
-	void on_tick()
+	void onTick()
 	{
 
 	}
@@ -27,7 +27,7 @@ int main()
 
 	std::shared_ptr<Entity> ent = core->add_Entity();
 
-	std::shared_ptr<Player> p = ent->add_component<Player>();
+	std::shared_ptr<Player> p = ent->addComponent<Player>();
 
 	core->start();
 

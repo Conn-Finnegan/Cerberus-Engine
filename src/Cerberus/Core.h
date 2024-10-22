@@ -14,6 +14,8 @@ namespace Cerberus
 	private:
 		std::vector<std::shared_ptr<Entity> > m_Entities;
 		std::weak_ptr<Core> m_self;
+
+
 	};
 }
 

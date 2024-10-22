@@ -16,6 +16,7 @@ namespace Cerberus
 	{
 		std::shared_ptr<Entity> rtn = std::make_shared<Entity>();
 		rtn->m_core = m_self;
+		rtn->m_self = rtn;
 		m_Entities.push_back(rtn);
 
 		std::cout << rtn->m_core.lock().get() << std::endl;
@@ -28,9 +29,9 @@ namespace Cerberus
 	{
 		for (size_t i = 0; i < 5; i++);
 		{
-			for (size_t ei = 0; ei < m_entities.size(); ei++)
+			for (size_t ei = 0; ei < m_Entities.size(); ei++)
 			{
-
+				m_Entities.at(ei)->tick();
 			}
 		}
 

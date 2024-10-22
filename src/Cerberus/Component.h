@@ -7,18 +7,24 @@ namespace Cerberus
 	struct Component
 	{
 		virtual void on_initialize(){}
-		virtual void on_tick(){}
+	
+		virtual void kill(){}
+		
+		void display();
+		
+		void onTick();
 
-		void tick(){}
+		void tick();
 
 	private:
 
-		friend struct Cerberus::Entity
+		friend struct Cerberus::Entity;
 
 
-			std::weak_ptr<Entity> m_entity;
 
-		void tick();
+		std::weak_ptr<Entity> m_Entities;
+
+	
 	};
 }
 
